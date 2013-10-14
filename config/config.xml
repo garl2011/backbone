@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<global>
+	<category code="financial" type="db">
+		<param name="eid" value="FINANCIAL"/>
+		<param name="driver" value="org.postgresql.Driver"/>
+		<param name="url" value="jdbc:postgresql://127.0.0.1/FINANCIAL?charSet=UTF8"/>
+		<param name="uname" value="postgres"/>
+		<param name="pass" value="admin"/>
+		<param name="exclusive" value="5"/>
+		<param name="shared" value="5"/>
+		<param name="st" value="10"/>
+		<param name="ps" value="10"/>
+		<param name="cs" value="10"/>
+		<param name="valid" value="select sysdate from dual"/>
+		<param name="retry" value="3"/>
+	</category>
+	<category code="fetchmail" type="task">
+		<param name="name" value="FETCHMAIL"/>
+		<param name="class" value="com.socix.task.FetchMailTask"/>
+		<param name="firstTime" value="2009-10-01 18:22:20"/>
+		<param name="delay" value="60"/>
+		<param name="period" value="3600"/>
+		<param name="fixRate" value="true"/>
+	</category>
+</global>
